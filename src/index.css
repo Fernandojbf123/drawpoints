@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  width: 100vw;
+  height: 100px;
+  background: rgb(61,61,61);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#header button {
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+  transition: all 0.1s ease-in-out;
+}
+
+#header button:active {
+  transform: scale(95%);
+}
+
+#canvas {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: rgb(195,195,195);
+}
+
+#point {
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 100%;
+  position: absolute;
+}
